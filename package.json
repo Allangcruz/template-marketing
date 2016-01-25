@@ -1,0 +1,27 @@
+{
+  "name": "template-marketing",
+  "version": "1.0.0",
+  "description": "Implementação de layout em psd",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allangcruz/template-marketing.git"
+  },
+  "keywords": [
+    "template",
+    "psd",
+    "teste"
+  ],
+  "author": "Allan Gonçalves da Cruz <allangcruz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allangcruz/template-marketing/issues"
+  },
+  "homepage": "https://github.com/Allangcruz/template-marketing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
