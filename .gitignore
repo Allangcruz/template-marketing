@@ -4,3 +4,8 @@ template-psd/
 # modulos de node
 
 node_modules/
+
+# Bootstrap
+
+assets/bootstrap/
+assets/bootstrap-1/
