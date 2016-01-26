@@ -1,12 +1,118 @@
 /*
  *	SETAR FONT
  */
+@font-face {
+	font-family: "OpenSans Bold";
+	src: url("fonts/Open_Sans/OpenSans-Bold.ttf");
+}
 
+@font-face {
+	font-family: "OpenSans Light";
+	src: url("fonts/Open_Sans/OpenSans-Light.ttf");
+}
 
 /*
  *	HEADER TEMPLATE
  */
-
  .header {
-
+	font-family: "OpenSans Bold";
+	margin-top: 2.8em;
+	margin-bottom: 2.4em;
  }
+
+ .header > h1 {
+ 	color: #5695e2;
+ }
+
+ .header > p {
+	font-family: "OpenSans Light";
+	color: #646464;
+	font-size: 1.4em;
+ }
+
+ /*
+  *	FUNDO AZUL
+  */
+.background {
+	height: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #2964a5;
+    box-shadow: 1px 1px 5px #4d4f05;
+    padding-top: 1.8em; 
+    padding-bottom: 1.8em;
+    color: #fff;
+    font-family: "OpenSans Light";
+}
+
+.background h2 {
+	font-family: "OpenSans Bold";
+	font-size: 1.5em; 
+	margin-bottom: 30px;
+}
+
+.background strong {
+	font-family: "OpenSans Bold";
+}
+
+ /*
+  *	FORMATACAO IMAGEM 
+  */
+.image-gestao {
+	margin: 0 auto;
+}
+
+ /*
+  *	BUTTON RECEBER EBOOK 
+  */
+.btn-ebook {
+  font-weight: bold;
+  font-family: "OpenSans Bold";
+  color: #ffffff;
+  background-color: #ffa200;
+  border-color: #4cae4c;
+}
+
+.btn-ebook:focus,
+.btn-ebook.focus {
+  color: #ffffff;
+  background-color: #ffa200;
+  border-color: #255625;
+}
+
+.btn-ebook:hover {
+  color: #ffffff;
+  background-color: #ffa200;
+  border-color: #398439;
+}
+
+.btn-ebook.active {
+  color: #ffffff;
+  background-color: #ffa200;
+  border-color: #398439;
+}
+
+.btn-ebook:active:hover,
+.btn-ebook.active.focus {
+  color: #ffffff;
+  background-color: #ffa200;
+  border-color: #255625;
+}
+
+.btn-ebook:active,
+.btn-ebook.active {
+  background-image: none;
+}
+
+.btn-ebook.disabled:hover,
+.btn-ebook[disabled]:hover,
+fieldset[disabled] .btn-ebook:hover,
+.btn-ebook.disabled:focus,
+.btn-ebook[disabled]:focus,
+fieldset[disabled] .btn-ebook:focus,
+.btn-ebook.disabled.focus,
+.btn-ebook[disabled].focus,
+fieldset[disabled] .btn-ebook.focus {
+  background-color: #ffa200;
+  border-color: #4cae4c;
+}
