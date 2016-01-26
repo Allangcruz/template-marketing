@@ -48,8 +48,16 @@
 .background h2 {
 	font-family: "OpenSans Bold";
 	font-size: 1.5em; 
-	margin-bottom: 30px;
 }
+
+.title-main {
+
+}
+
+.title-download {
+	margin-bottom: 0;
+}
+
 
 .background strong {
 	font-family: "OpenSans Bold";
@@ -73,7 +81,6 @@
   border-color: #4cae4c;
 }
 
-.btn-ebook:focus,
 .btn-ebook.focus {
   color: #ffffff;
   background-color: #ffa200;
@@ -90,29 +97,6 @@
   color: #ffffff;
   background-color: #ffa200;
   border-color: #398439;
-}
-
-.btn-ebook:active:hover,
-.btn-ebook.active.focus {
-  color: #ffffff;
-  background-color: #ffa200;
-  border-color: #255625;
-}
-
-.btn-ebook:active,
-.btn-ebook.active {
   background-image: none;
 }
 
-.btn-ebook.disabled:hover,
-.btn-ebook[disabled]:hover,
-fieldset[disabled] .btn-ebook:hover,
-.btn-ebook.disabled:focus,
-.btn-ebook[disabled]:focus,
-fieldset[disabled] .btn-ebook:focus,
-.btn-ebook.disabled.focus,
-.btn-ebook[disabled].focus,
-fieldset[disabled] .btn-ebook.focus {
-  background-color: #ffa200;
-  border-color: #4cae4c;
-}
