@@ -34,9 +34,9 @@
   *	FUNDO AZUL
   */
 .background {
-	height: 100%;
+	  height: 100%;
     max-width: 100%;
-    margin: 20px auto;
+    margin-top: 20px;
     background-color: #2964a5;
     box-shadow: 1px 1px 5px #4d4f05;
     padding-top: 1.8em; 
@@ -50,9 +50,6 @@
 	font-size: 1.5em; 
 }
 
-.title-main {
-
-}
 
 .title-download {
 	margin-bottom: 0;
@@ -67,7 +64,7 @@
   *	FORMATACAO IMAGEM 
   */
 .image-gestao {
-	margin-left:20px;
+	margin-left: 30px;
 }
 
  /*
@@ -100,3 +97,34 @@
   background-image: none;
 }
 
+
+ /*
+  * FUNDO AZUL
+  */
+.footer {
+    height: 100%;
+    max-width: 100%;
+    background-color: #f7f8f9;
+    padding-top: 1.8em; 
+    padding-bottom: 1.8em;
+    font-family: "OpenSans Light";
+}
+
+.telefone {
+    font-family: "OpenSans Bold";
+    color: #559bf6;
+    font-size: 2.0em;
+    display: block;
+}
+
+.endereco {
+  font-family: "OpenSans Light";
+  font-size: 1.2em;
+  color: #6c809a;
+}
+
+.image-bandeira {
+    margin-right: 20px;
+    width: 30px;
+    height: 20px;
+}
