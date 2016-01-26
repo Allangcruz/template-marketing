@@ -7,16 +7,21 @@
 	<title>eBook - Gestão de Representantes Comerciais</title>
 
 	<!-- Metas tag SEO -->
-    <meta name="keywords" content="" />
-	<meta name="description" content=""/>
+    <meta name="keywords" content="gestão, ebook, representantes, comercial" />
+	<meta name="description" content="Descubra como ajudar seus representantes a venderem mais."/>
 
     <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-1/css/bootstrap.css">
+
+    <!-- Css do layout-->
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+
 </head>
 <body>
-	<header class="text-center">
+	<header class="header text-center">
         <h1>eBook - Gestão de Representantes Comerciais</h1>
         <p>Comquiste o comprometimento e aumente o desempenho do seu time de vendas</p>
+        <br><br><br>
     </header>
     
     <main class="container">
@@ -47,13 +52,19 @@
         	<p>Basta preencher o formulário</p>
 
         	<form>
-        		<input type="text" id="nome" name="nome" placeholder="Nome">
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control">
+                </div>                
 
-        		<input type="email" id="email" name="email" placeholder="E-mail">
+                <div class="form-group">
+            		<input type="email" id="email" name="email" placeholder="E-mail" class="form-control">
+                </div>                
 
-        		<input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                <div class="form-group">
+            		<input type="tel" id="telefone" name="telefone" placeholder="Telefone" class="form-control">
+                </div>
 
-        		<button type="submmit">RECEBER EBOOK</button>
+        		<button class="btn btn-primary" type="submmit">RECEBER EBOOK</button>
         	</form>
         </article>
     </main>
