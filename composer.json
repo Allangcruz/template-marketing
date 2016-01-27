@@ -1,0 +1,13 @@
+{
+    "name": "allan/template-marketing",
+    "description": "Implementacao de um simples template de ebook",
+    "authors": [
+        {
+            "name": "Allan Gonçalves da Cruz",
+            "email": "allangcruz@gmail.com"
+        }
+    ],
+    "require": {
+        "werx/email": "^1.1"
+    }
+}

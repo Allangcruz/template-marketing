@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c7beff00055e80dd14086481953e9165",
+    "content-hash": "2014cc537e865d8cd9f4fe4861562d56",
+    "packages": [
+        {
+            "name": "werx/email",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/werx/email.git",
+                "reference": "1274a997de82839b678f553d41f11ba893de71a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/werx/email/zipball/1274a997de82839b678f553d41f11ba893de71a0",
+                "reference": "1274a997de82839b678f553d41f11ba893de71a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.4"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "4.2.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "werx\\Email\\": "src/",
+                    "werx\\EmailTests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL 3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Moody",
+                    "email": "josh@moody.io"
+                }
+            ],
+            "description": "Composer-friendly wrapper for CI Email.",
+            "homepage": "https://github.com/werx/email",
+            "time": "2015-05-01 15:07:12"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
