@@ -59,17 +59,17 @@
                 <p>Basta preencher o formulário</p>
                 <br>
 
-                <form>
+                <form method="post" action="backend/EnviarEmail.php">
                     <div class="form-group">
-                        <input type="text" class="form-control input-lg" id="nome" name="nome" placeholder="Nome" >
+                        <input type="text" class="form-control input-lg" id="nome" name="nome" placeholder="Nome" required maxlength="120">
                     </div>                
 
                     <div class="form-group">
-                        <input type="email" class="form-control input-lg" id="email" name="email" placeholder="E-mail" >
+                        <input type="email" class="form-control input-lg" id="email" name="email" placeholder="E-mail" required maxlength="120">
                     </div>                
 
                     <div class="form-group">
-                        <input type="tel" class="form-control input-lg" id="telefone" name="telefone" placeholder="Telefone" >
+                        <input type="tel" class="form-control input-lg" id="telefone" name="telefone" placeholder="Telefone" required  max="15">
                     </div>
                     <span  class="pull-right">
                         <button class="btn btn-lg btn-ebook" type="submmit">RECEBER EBOOK</button>
