@@ -1,4 +1,5 @@
 <?php 
+
 header("Content-type: text/html; charset=utf-8");
 
 require_once('phpmailer/class.phpmailer.php');
@@ -7,6 +8,7 @@ require_once('phpmailer/PHPMailerAutoload.php');
 //contem a mensagem formatada
 require_once "mensagemEmail.php";
 
+//recupera os dados do formulario
 $nome = isset($_POST['nome']) ? $_POST['nome']:'';
 $email = isset($_POST['email']) ? $_POST['email']:'';
 $telefone = isset($_POST['telefone']) ? $_POST['telefone']:'';
@@ -29,15 +31,19 @@ $mail->SMTPOptions = array(
     )
 );
 
+//dados de envid do formulario
 $mail->setFrom('teste@allangcruz.com.br', 'Allan Gonçalves da Cruz');
 $mail->addAddress($email, $nome);
-$mail->addBCC('teste@allangcruz.com.br');
 $mail->isHTML(true);
 $mail->Subject = 'eBook -  Gestão de Representantes Comerciais';
 
 $mail->Body    = $mensagem;
 
+//enviar o e-mail
 if($mail->send()) {
+
+	//envia os dados para o dono do ebook
+	enviaDadosDoUsuario($nome, $email, $telefone);
 	echo '<script>alert("Obrigado, verifique seu e-mail!");location.href="../";</script>';
 } else {
 	echo '<script>alert("Ocorreu um erro ao enviar o eBook ao seu e-mail, verifique se o mesmo esta correto!");</script>';

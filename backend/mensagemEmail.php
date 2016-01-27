@@ -1,5 +1,7 @@
 <?php 
 
+//mudar referencia de url de imagens e pdf
+
 $mensagem = '
 		<table width="100%" cellspacing="0" cellpadding="0" border="0" style="border:solid 1px #ffffff;border-radius:0px;font-family:Helvetica,Arial,Verdana,sans-serif;font-size:14px">
 		   <tbody>
@@ -58,3 +60,44 @@ $mensagem = '
 		      </tr>
 		   </tbody>
 		</table>';
+
+
+//função que envia o dados para o dono do ebook com os do usuario que deseja baixa o eBook
+function enviaDadosDoUsuario($nome, $email, $telefone)
+{
+	$mensagem = '<strong>Nome: '.$nome.'</strong><br>';
+	$mensagem .= '<strong>E-mail: '.$email.'</strong><br>';
+	$mensagem .= '<strong>Telefone: '.$telefone.'</strong><br>';
+
+	$mail = new PHPMailer;
+	$mail->isSMTP();                                      
+	$mail->CharSet = "utf-8"; 
+	$mail->Port = 25;                                    
+
+	$mail->Host = 'mail.allangcruz.com.br';  
+	$mail->SMTPAuth = true;                             
+	$mail->Username = 'teste@allangcruz.com.br';              
+	$mail->Password = 'teste123';    
+
+	$mail->SMTPOptions = array(
+	    'ssl' => array(
+	        'verify_peer' => false,
+	        'verify_peer_name' => false,
+	        'allow_self_signed' => true
+	    )
+	);
+
+	//dados de envid do formulario
+	$mail->setFrom('teste@allangcruz.com.br', 'Allan Gonçalves da Cruz');
+	$mail->addAddress('teste@allangcruz.com.br', 'Allan Gonçalves da Cruz');
+	$mail->isHTML(true);
+	$mail->Subject = 'Novo usuario';
+
+	$mail->Body    = $mensagem;
+
+	//enviar o e-mail
+	if(!$mail->send()) {
+		echo $mail->ErrorInfo;
+	}
+
+}
