@@ -62,7 +62,17 @@ $mensagem = '
 		</table>';
 
 
-//função que envia o dados para o dono do ebook com os do usuario que deseja baixa o eBook
+/*
+	função que envia o dados para o dono do ebook com os do usuario que deseja baixa o eBook
+	caso queirar testa se o envio com os dados do assinante esta realamente chegando 
+	utilize o seguinte serviço de e-mail.
+	Endereço: http://www.allangcruz.com.br/webmail
+	Usuario: teste@allangcruz.com.br
+	Senha: teste123
+
+	Caso queiram visualizar a versao online de teste acesse o link abaixo
+	http://www.allangcruz.com.br/ebook-de-marketing/
+*/
 function enviaDadosDoUsuario($nome, $email, $telefone)
 {
 	$mensagem = '<strong>Nome: '.$nome.'</strong><br>';

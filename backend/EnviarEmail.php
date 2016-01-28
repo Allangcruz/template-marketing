@@ -31,7 +31,7 @@ $mail->SMTPOptions = array(
     )
 );
 
-//dados de envid do formulario
+//dados de envio do ebook
 $mail->setFrom('teste@allangcruz.com.br', 'Allan Gonçalves da Cruz');
 $mail->addAddress($email, $nome);
 $mail->isHTML(true);
@@ -46,6 +46,6 @@ if($mail->send()) {
 	enviaDadosDoUsuario($nome, $email, $telefone);
 	echo '<script>alert("Obrigado, verifique seu e-mail!");location.href="../";</script>';
 } else {
-	echo '<script>alert("Ocorreu um erro ao enviar o eBook ao seu e-mail, verifique se o mesmo esta correto!");</script>';
-	echo $mail->ErrorInfo;
+	echo '<script>alert("Ocorreu um erro ao enviar o eBook ao seu e-mail, verifique se o mesmo esta correto!");location.href="../";</script>';
+	//echo $mail->ErrorInfo;
 }
